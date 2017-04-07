@@ -16,6 +16,11 @@
 		327BC18B1E97BD300071D0ED /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327BC18A1E97BD300071D0ED /* SignUp.storyboard */; };
 		327BC18E1E97C5280071D0ED /* GithubRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC18D1E97C5280071D0ED /* GithubRequestType.swift */; };
 		327BC1921E97C5B90071D0ED /* GetUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1911E97C5B90071D0ED /* GetUserRequest.swift */; };
+		327BC1961E97D1F20071D0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1951E97D1F20071D0ED /* ProfileViewController.swift */; };
+		327BC19A1E97D3570071D0ED /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */; };
+		327BC19C1E97D4B80071D0ED /* Contacts-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 327BC19B1E97D4B80071D0ED /* Contacts-50@2x.png */; };
+		327BC1A01E97D5AD0071D0ED /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC19F1E97D5AD0071D0ED /* UIColor+Extension.swift */; };
+		327BC1A31E97D8D60071D0ED /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1A21E97D8D60071D0ED /* ReposViewController.swift */; };
 		5260C07069289709C8263F3B /* Pods_GithubClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD4B54ED9D9D6337DF631C /* Pods_GithubClientTests.framework */; };
 		63C6B5DBA996AD5F086DF51A /* Pods_GithubClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */; };
 		75663D4871F3289CBDD452E0 /* Pods_GithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FFDA211DED47622706862A /* Pods_GithubClient.framework */; };
@@ -55,6 +60,11 @@
 		327BC18A1E97BD300071D0ED /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		327BC18D1E97C5280071D0ED /* GithubRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRequestType.swift; sourceTree = "<group>"; };
 		327BC1911E97C5B90071D0ED /* GetUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRequest.swift; sourceTree = "<group>"; };
+		327BC1951E97D1F20071D0ED /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		327BC19B1E97D4B80071D0ED /* Contacts-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-50@2x.png"; sourceTree = "<group>"; };
+		327BC19F1E97D5AD0071D0ED /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		327BC1A21E97D8D60071D0ED /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		6D13B8C9E536EFAE23E7B3D9 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		6F1349A17E93019B6D3A7767 /* Pods-GithubClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClientUITests/Pods-GithubClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +141,10 @@
 		327BC1561E97B72E0071D0ED /* GithubClient */ = {
 			isa = PBXGroup;
 			children = (
+				327BC1A11E97D5B40071D0ED /* Extension */,
 				327BC1901E97C58A0071D0ED /* Model */,
 				327BC1871E97BCED0071D0ED /* View */,
+				327BC19E1E97D4C30071D0ED /* Resouce */,
 				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
@@ -163,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				327BC18C1E97C2820071D0ED /* Sign Up */,
+				327BC1981E97D31E0071D0ED /* Main */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -174,7 +186,6 @@
 				327BC18A1E97BD300071D0ED /* SignUp.storyboard */,
 				327BC1851E97BCE80071D0ED /* SignUpViewController.swift */,
 			);
-			name = "Sign Up";
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
@@ -184,7 +195,6 @@
 				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
 				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
 			);
-			name = Request;
 			path = Request;
 			sourceTree = "<group>";
 		};
@@ -193,8 +203,57 @@
 			children = (
 				327BC18F1E97C5790071D0ED /* Request */,
 			);
-			name = Model;
 			path = Model;
+			sourceTree = "<group>";
+		};
+		327BC1971E97D2360071D0ED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				327BC1951E97D1F20071D0ED /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		327BC1981E97D31E0071D0ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
+				327BC1A41E97D8DA0071D0ED /* Repos */,
+				327BC1971E97D2360071D0ED /* Profile */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		327BC19D1E97D4BD0071D0ED /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				327BC19B1E97D4B80071D0ED /* Contacts-50@2x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		327BC19E1E97D4C30071D0ED /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				327BC19D1E97D4BD0071D0ED /* Image */,
+			);
+			name = Resouce;
+			sourceTree = "<group>";
+		};
+		327BC1A11E97D5B40071D0ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				327BC19F1E97D5AD0071D0ED /* UIColor+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		327BC1A41E97D8DA0071D0ED /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				327BC1A21E97D8D60071D0ED /* ReposViewController.swift */,
+			);
+			name = Repos;
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {
@@ -326,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327BC19C1E97D4B80071D0ED /* Contacts-50@2x.png in Resources */,
 				327BC1621E97B72E0071D0ED /* LaunchScreen.storyboard in Resources */,
 				327BC15F1E97B72E0071D0ED /* Assets.xcassets in Resources */,
 				327BC18B1E97BD300071D0ED /* SignUp.storyboard in Resources */,
@@ -491,8 +551,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327BC1A01E97D5AD0071D0ED /* UIColor+Extension.swift in Sources */,
 				327BC1921E97C5B90071D0ED /* GetUserRequest.swift in Sources */,
 				327BC18E1E97C5280071D0ED /* GithubRequestType.swift in Sources */,
+				327BC1961E97D1F20071D0ED /* ProfileViewController.swift in Sources */,
+				327BC1A31E97D8D60071D0ED /* ReposViewController.swift in Sources */,
+				327BC19A1E97D3570071D0ED /* MainTabBarViewController.swift in Sources */,
 				327BC1861E97BCE80071D0ED /* SignUpViewController.swift in Sources */,
 				327BC1581E97B72E0071D0ED /* AppDelegate.swift in Sources */,
 			);

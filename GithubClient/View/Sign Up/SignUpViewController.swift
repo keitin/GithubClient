@@ -33,6 +33,10 @@ final class SignUpViewController: UIViewController {
             switch result {
             case .success(let user):
                 print(user)
+                
+                let mainTabBarViewController = MainTabBarViewController()
+                UIApplication.shared.keyWindow?.rootViewController = mainTabBarViewController
+                
             case .failure(let error):
                 print(error)
             }            

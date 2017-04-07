@@ -1,0 +1,30 @@
+PODS:
+  - APIKit (3.1.1):
+    - Result (~> 3.0)
+  - Curry (3.0.0)
+  - Himotoki (3.0.1)
+  - Result (3.2.1)
+  - Runes (4.0.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - APIKit
+  - Curry
+  - Himotoki
+  - Result
+  - Runes
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
+  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  Runes: ff20f163b478ac2c0e18158d6086fd5b1997f983
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: a9d9a3d99fe057cb044f4f1dfd6aadc6edbc3e31
+
+COCOAPODS: 1.1.0

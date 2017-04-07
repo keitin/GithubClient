@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		327BC1581E97B72E0071D0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1571E97B72E0071D0ED /* AppDelegate.swift */; };
-		327BC15A1E97B72E0071D0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1591E97B72E0071D0ED /* ViewController.swift */; };
-		327BC15D1E97B72E0071D0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327BC15B1E97B72E0071D0ED /* Main.storyboard */; };
 		327BC15F1E97B72E0071D0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327BC15E1E97B72E0071D0ED /* Assets.xcassets */; };
 		327BC1621E97B72E0071D0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */; };
 		327BC16D1E97B72E0071D0ED /* GithubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC16C1E97B72E0071D0ED /* GithubClientTests.swift */; };
 		327BC1781E97B72E0071D0ED /* GithubClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1771E97B72E0071D0ED /* GithubClientUITests.swift */; };
+		327BC1861E97BCE80071D0ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1851E97BCE80071D0ED /* SignUpViewController.swift */; };
+		327BC18B1E97BD300071D0ED /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327BC18A1E97BD300071D0ED /* SignUp.storyboard */; };
 		5260C07069289709C8263F3B /* Pods_GithubClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD4B54ED9D9D6337DF631C /* Pods_GithubClientTests.framework */; };
 		63C6B5DBA996AD5F086DF51A /* Pods_GithubClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */; };
 		75663D4871F3289CBDD452E0 /* Pods_GithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FFDA211DED47622706862A /* Pods_GithubClient.framework */; };
@@ -40,8 +40,6 @@
 		0A9A27E393432DEEB9BFF4B5 /* Pods-GithubClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClientTests/Pods-GithubClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		327BC1541E97B72E0071D0ED /* GithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327BC1571E97B72E0071D0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		327BC1591E97B72E0071D0ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		327BC15C1E97B72E0071D0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		327BC15E1E97B72E0071D0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327BC1611E97B72E0071D0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327BC1631E97B72E0071D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		327BC1731E97B72E0071D0ED /* GithubClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327BC1771E97B72E0071D0ED /* GithubClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientUITests.swift; sourceTree = "<group>"; };
 		327BC1791E97B72E0071D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327BC1851E97BCE80071D0ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		327BC18A1E97BD300071D0ED /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		6D13B8C9E536EFAE23E7B3D9 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		6F1349A17E93019B6D3A7767 /* Pods-GithubClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClientUITests/Pods-GithubClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
-				327BC1591E97B72E0071D0ED /* ViewController.swift */,
-				327BC15B1E97B72E0071D0ED /* Main.storyboard */,
+				327BC1871E97BCED0071D0ED /* View */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
@@ -153,6 +152,23 @@
 				327BC1791E97B72E0071D0ED /* Info.plist */,
 			);
 			path = GithubClientUITests;
+			sourceTree = "<group>";
+		};
+		327BC1871E97BCED0071D0ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327BC18C1E97C2820071D0ED /* Sign Up */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		327BC18C1E97C2820071D0ED /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				327BC1851E97BCE80071D0ED /* SignUpViewController.swift */,
+				327BC18A1E97BD300071D0ED /* SignUp.storyboard */,
+			);
+			name = "Sign Up";
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {
@@ -286,7 +302,7 @@
 			files = (
 				327BC1621E97B72E0071D0ED /* LaunchScreen.storyboard in Resources */,
 				327BC15F1E97B72E0071D0ED /* Assets.xcassets in Resources */,
-				327BC15D1E97B72E0071D0ED /* Main.storyboard in Resources */,
+				327BC18B1E97BD300071D0ED /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				327BC15A1E97B72E0071D0ED /* ViewController.swift in Sources */,
+				327BC1861E97BCE80071D0ED /* SignUpViewController.swift in Sources */,
 				327BC1581E97B72E0071D0ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,14 +502,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		327BC15B1E97B72E0071D0ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				327BC15C1E97B72E0071D0ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -707,6 +715,7 @@
 				327BC17E1E97B72E0071D0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327BC17F1E97B72E0071D0ED /* Build configuration list for PBXNativeTarget "GithubClientTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +724,7 @@
 				327BC1811E97B72E0071D0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		327BC1821E97B72E0071D0ED /* Build configuration list for PBXNativeTarget "GithubClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +733,7 @@
 				327BC1841E97B72E0071D0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

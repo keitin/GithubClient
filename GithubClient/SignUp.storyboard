@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="llJ-Qt-Boo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="LGI-4x-F21">
+            <objects>
+                <viewController id="llJ-Qt-Boo" customClass="SignUpViewController" customModule="GithubClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trM-Rh-RG6"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0h-ct-gNO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bh-5m-iGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJe-Pv-AO5">
+                                <rect key="frame" x="16" y="310" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.14052203297615051" green="0.16048264503479004" blue="0.18131551146507263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="wjM-Bu-GfE"/>
+                                </constraints>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapLogInButtom:" destination="llJ-Qt-Boo" eventType="touchUpInside" id="PxB-4R-iV7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Github user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yca-dx-0eL">
+                                <rect key="frame" x="16" y="168" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="kbU-I0-qgw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LJe-Pv-AO5" firstAttribute="leading" secondItem="8bh-5m-iGg" secondAttribute="leadingMargin" id="2u9-oA-512"/>
+                            <constraint firstItem="yca-dx-0eL" firstAttribute="top" secondItem="trM-Rh-RG6" secondAttribute="bottom" constant="148" id="4Sf-92-9dt"/>
+                            <constraint firstItem="LJe-Pv-AO5" firstAttribute="top" secondItem="yca-dx-0eL" secondAttribute="bottom" constant="100" id="TOp-3p-Tje"/>
+                            <constraint firstItem="yca-dx-0eL" firstAttribute="leading" secondItem="8bh-5m-iGg" secondAttribute="leadingMargin" id="VPz-ba-bjD"/>
+                            <constraint firstItem="LJe-Pv-AO5" firstAttribute="trailing" secondItem="8bh-5m-iGg" secondAttribute="trailingMargin" id="Xyl-OP-EnO"/>
+                            <constraint firstItem="yca-dx-0eL" firstAttribute="trailing" secondItem="8bh-5m-iGg" secondAttribute="trailingMargin" id="gFi-U8-YNJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logInButtom" destination="LJe-Pv-AO5" id="QJ8-ye-6nv"/>
+                        <outlet property="userNameTextField" destination="yca-dx-0eL" id="aTj-J5-lA3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzA-bc-ecx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016.8" y="815.44227886056979"/>
+        </scene>
+    </scenes>
+</document>

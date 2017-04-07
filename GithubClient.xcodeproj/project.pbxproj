@@ -143,8 +143,8 @@
 			children = (
 				327BC1A11E97D5B40071D0ED /* Extension */,
 				327BC1901E97C58A0071D0ED /* Model */,
-				327BC1871E97BCED0071D0ED /* View */,
 				327BC19E1E97D4C30071D0ED /* Resouce */,
+				327BC1871E97BCED0071D0ED /* View */,
 				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
@@ -174,8 +174,8 @@
 		327BC1871E97BCED0071D0ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				327BC18C1E97C2820071D0ED /* Sign Up */,
 				327BC1981E97D31E0071D0ED /* Main */,
+				327BC18C1E97C2820071D0ED /* Sign Up */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,16 +212,18 @@
 				327BC1951E97D1F20071D0ED /* ProfileViewController.swift */,
 			);
 			name = Profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		327BC1981E97D31E0071D0ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
-				327BC1A41E97D8DA0071D0ED /* Repos */,
 				327BC1971E97D2360071D0ED /* Profile */,
+				327BC1A41E97D8DA0071D0ED /* Repos */,
+				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
 			);
 			name = Main;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		327BC19D1E97D4BD0071D0ED /* Image */ = {
@@ -230,6 +232,7 @@
 				327BC19B1E97D4B80071D0ED /* Contacts-50@2x.png */,
 			);
 			name = Image;
+			path = Image;
 			sourceTree = "<group>";
 		};
 		327BC19E1E97D4C30071D0ED /* Resouce */ = {
@@ -238,6 +241,7 @@
 				327BC19D1E97D4BD0071D0ED /* Image */,
 			);
 			name = Resouce;
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 		327BC1A11E97D5B40071D0ED /* Extension */ = {
@@ -246,6 +250,7 @@
 				327BC19F1E97D5AD0071D0ED /* UIColor+Extension.swift */,
 			);
 			name = Extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		327BC1A41E97D8DA0071D0ED /* Repos */ = {
@@ -254,6 +259,7 @@
 				327BC1A21E97D8D60071D0ED /* ReposViewController.swift */,
 			);
 			name = Repos;
+			path = Repos;
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {

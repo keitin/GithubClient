@@ -109,12 +109,12 @@
 		327BC14B1E97B72D0071D0ED = {
 			isa = PBXGroup;
 			children = (
+				83ED3D18AEAA8E9A61B7DC06 /* Frameworks */,
 				327BC1561E97B72E0071D0ED /* GithubClient */,
 				327BC16B1E97B72E0071D0ED /* GithubClientTests */,
 				327BC1761E97B72E0071D0ED /* GithubClientUITests */,
-				327BC1551E97B72E0071D0ED /* Products */,
 				290468E8E9B547C748D9ECB5 /* Pods */,
-				83ED3D18AEAA8E9A61B7DC06 /* Frameworks */,
+				327BC1551E97B72E0071D0ED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,12 +131,12 @@
 		327BC1561E97B72E0071D0ED /* GithubClient */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
 				327BC1901E97C58A0071D0ED /* Model */,
 				327BC1871E97BCED0071D0ED /* View */,
+				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
-				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
+				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
 			);
 			path = GithubClient;
 			sourceTree = "<group>";
@@ -165,24 +165,27 @@
 				327BC18C1E97C2820071D0ED /* Sign Up */,
 			);
 			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		327BC18C1E97C2820071D0ED /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1851E97BCE80071D0ED /* SignUpViewController.swift */,
 				327BC18A1E97BD300071D0ED /* SignUp.storyboard */,
+				327BC1851E97BCE80071D0ED /* SignUpViewController.swift */,
 			);
 			name = "Sign Up";
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 		327BC18F1E97C5790071D0ED /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
 				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
+				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
 			);
 			name = Request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 		327BC1901E97C58A0071D0ED /* Model */ = {
@@ -191,6 +194,7 @@
 				327BC18F1E97C5790071D0ED /* Request */,
 			);
 			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {
@@ -532,6 +536,7 @@
 				327BC1611E97B72E0071D0ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

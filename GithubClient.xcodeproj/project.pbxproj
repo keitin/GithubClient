@@ -14,6 +14,8 @@
 		327BC1781E97B72E0071D0ED /* GithubClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1771E97B72E0071D0ED /* GithubClientUITests.swift */; };
 		327BC1861E97BCE80071D0ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1851E97BCE80071D0ED /* SignUpViewController.swift */; };
 		327BC18B1E97BD300071D0ED /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327BC18A1E97BD300071D0ED /* SignUp.storyboard */; };
+		327BC18E1E97C5280071D0ED /* GithubRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC18D1E97C5280071D0ED /* GithubRequestType.swift */; };
+		327BC1921E97C5B90071D0ED /* GetUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1911E97C5B90071D0ED /* GetUserRequest.swift */; };
 		5260C07069289709C8263F3B /* Pods_GithubClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD4B54ED9D9D6337DF631C /* Pods_GithubClientTests.framework */; };
 		63C6B5DBA996AD5F086DF51A /* Pods_GithubClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */; };
 		75663D4871F3289CBDD452E0 /* Pods_GithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FFDA211DED47622706862A /* Pods_GithubClient.framework */; };
@@ -51,6 +53,8 @@
 		327BC1791E97B72E0071D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327BC1851E97BCE80071D0ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		327BC18A1E97BD300071D0ED /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		327BC18D1E97C5280071D0ED /* GithubRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRequestType.swift; sourceTree = "<group>"; };
+		327BC1911E97C5B90071D0ED /* GetUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRequest.swift; sourceTree = "<group>"; };
 		6D13B8C9E536EFAE23E7B3D9 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		6F1349A17E93019B6D3A7767 /* Pods-GithubClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClientUITests/Pods-GithubClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
+				327BC1901E97C58A0071D0ED /* Model */,
 				327BC1871E97BCED0071D0ED /* View */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
@@ -169,6 +174,23 @@
 				327BC18A1E97BD300071D0ED /* SignUp.storyboard */,
 			);
 			name = "Sign Up";
+			sourceTree = "<group>";
+		};
+		327BC18F1E97C5790071D0ED /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
+				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		327BC1901E97C58A0071D0ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327BC18F1E97C5790071D0ED /* Request */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {
@@ -465,6 +487,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327BC1921E97C5B90071D0ED /* GetUserRequest.swift in Sources */,
+				327BC18E1E97C5280071D0ED /* GithubRequestType.swift in Sources */,
 				327BC1861E97BCE80071D0ED /* SignUpViewController.swift in Sources */,
 				327BC1581E97B72E0071D0ED /* AppDelegate.swift in Sources */,
 			);

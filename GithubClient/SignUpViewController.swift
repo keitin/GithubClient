@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import APIKit
+import Result
 
 final class SignUpViewController: UIViewController {
 
@@ -26,7 +28,15 @@ final class SignUpViewController: UIViewController {
     }
     
     @IBAction func tapLogInButtom(_ sender: UIButton) {
-        print(userNameTextField.text)
+        let request = GetUserRequest(userName: "keitin")
+        Session.send(request) { result in
+            switch result {
+            case .success(let user):
+                print(user)
+            case .failure(let error):
+                print(error)
+            }            
+        }
     }
 
     override func didReceiveMemoryWarning() {

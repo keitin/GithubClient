@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import APIKit
 
 class SearchReposViewController: UITableViewController {
-    @IBOutlet weak var searchButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
 
     let cellHeight: CGFloat = 70
+    var repos: [Repository] = []
     
     static func makeInstance() -> SearchReposViewController {
         let storyboard = UIStoryboard(name: "SearchRepos", bundle: nil)
@@ -29,10 +30,22 @@ class SearchReposViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "RepoCell", bundle: nil), forCellReuseIdentifier: "RepoCell")
-        
     }
     
     @IBAction func tapSearchButton(_ sender: UIButton) {
+        
+        let q = self.textField.text!
+        let request = SearchRepositoriesRequest(q: q)
+        Session.send(request) { result in
+            switch result {
+            case .success(let repos):
+                self.repos = repos
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    
         self.textField.resignFirstResponder()
     }
 
@@ -54,15 +67,13 @@ class SearchReposViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return repos.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as! RepoCell
-
-        // Configure the cell...
-
+        cell.fillWith(repo: repos[indexPath.row])
         return cell
     }
 

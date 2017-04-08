@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import APIKit
 
 class ReposViewController: UITableViewController {
 
     let cellHeight: CGFloat = 70
+    var repos: [Repository] = []
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -23,6 +25,16 @@ class ReposViewController: UITableViewController {
         self.title = "Repository"
         tableView.register(UINib(nibName: "RepoCell", bundle: nil), forCellReuseIdentifier: "RepoCell")
         
+        let request = GetRepositoriesRequest(userName: "keitin")
+        Session.send(request) { result in
+            switch result {
+            case .success(let repos):
+                self.repos = repos
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,12 +51,14 @@ class ReposViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return self.repos.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as! RepoCell
+        let repo = repos[indexPath.row]
+        cell.fillWith(repo: repo)
         return cell
     }
 

@@ -32,11 +32,8 @@ final class SignUpViewController: UIViewController {
         Session.send(request) { result in
             switch result {
             case .success(let user):
-                print(user)
-                
                 let mainTabBarViewController = MainTabBarViewController()
                 UIApplication.shared.keyWindow?.rootViewController = mainTabBarViewController
-                
             case .failure(let error):
                 print(error)
             }            

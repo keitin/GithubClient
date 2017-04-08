@@ -23,6 +23,7 @@
 		327BC1A31E97D8D60071D0ED /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1A21E97D8D60071D0ED /* ReposViewController.swift */; };
 		327BC1AB1E9873690071D0ED /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1A91E9873690071D0ED /* RepoCell.swift */; };
 		327BC1AC1E9873690071D0ED /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 327BC1AA1E9873690071D0ED /* RepoCell.xib */; };
+		327BC1AE1E9878240071D0ED /* GetRepositoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327BC1AD1E9878240071D0ED /* GetRepositoriesRequest.swift */; };
 		5260C07069289709C8263F3B /* Pods_GithubClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD4B54ED9D9D6337DF631C /* Pods_GithubClientTests.framework */; };
 		63C6B5DBA996AD5F086DF51A /* Pods_GithubClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */; };
 		75663D4871F3289CBDD452E0 /* Pods_GithubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FFDA211DED47622706862A /* Pods_GithubClient.framework */; };
@@ -69,6 +70,7 @@
 		327BC1A21E97D8D60071D0ED /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		327BC1A91E9873690071D0ED /* RepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		327BC1AA1E9873690071D0ED /* RepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
+		327BC1AD1E9878240071D0ED /* GetRepositoriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRepositoriesRequest.swift; sourceTree = "<group>"; };
 		6D13B8C9E536EFAE23E7B3D9 /* Pods-GithubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClient/Pods-GithubClient.release.xcconfig"; sourceTree = "<group>"; };
 		6F1349A17E93019B6D3A7767 /* Pods-GithubClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubClientUITests/Pods-GithubClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA9826DA75F66CA002495F6 /* Pods_GithubClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,11 +147,11 @@
 		327BC1561E97B72E0071D0ED /* GithubClient */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1A11E97D5B40071D0ED /* Extension */,
-				327BC1901E97C58A0071D0ED /* Model */,
-				327BC19E1E97D4C30071D0ED /* Resouce */,
-				327BC1871E97BCED0071D0ED /* View */,
 				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
+				327BC1901E97C58A0071D0ED /* Model */,
+				327BC1871E97BCED0071D0ED /* View */,
+				327BC1A11E97D5B40071D0ED /* Extension */,
+				327BC19E1E97D4C30071D0ED /* Resouce */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
 				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
@@ -196,8 +198,9 @@
 		327BC18F1E97C5790071D0ED /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
 				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
+				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
+				327BC1AD1E9878240071D0ED /* GetRepositoriesRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327BC1AE1E9878240071D0ED /* GetRepositoriesRequest.swift in Sources */,
 				327BC1A01E97D5AD0071D0ED /* UIColor+Extension.swift in Sources */,
 				327BC1921E97C5B90071D0ED /* GetUserRequest.swift in Sources */,
 				327BC18E1E97C5280071D0ED /* GithubRequestType.swift in Sources */,

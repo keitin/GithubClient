@@ -18,6 +18,10 @@ class RepoCell: UITableViewCell {
         // Initialization code
     }
 
+    func fillWith(repo: Repository) {
+        self.nameLabel.text = repo.name
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

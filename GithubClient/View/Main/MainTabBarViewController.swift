@@ -20,15 +20,20 @@ class MainTabBarViewController: UITabBarController {
         let profileViewController = ProfileViewController()
         let profielNavigationController = DesignedNavigationController(rootViewController: profileViewController)
         profileViewController.tabBarItem.image = UIImage(named: "Contacts-50")
-        profileViewController.tabBarItem.title = "profile"
+        profileViewController.tabBarItem.title = "Profile"
         
         let reposViewController = ReposViewController()
         let reposNavigationController = DesignedNavigationController(rootViewController: reposViewController)
         reposViewController.tabBarItem.image = UIImage(named: "")
-        reposViewController.tabBarItem.title = "repos"
+        reposViewController.tabBarItem.title = "Repository"
+        
+        let searchReposNavigationController = SearchReposNavigationController.makeInstance()
+        searchReposNavigationController.tabBarItem.image = UIImage(named: "")
+        searchReposNavigationController.tabBarItem.title = "Search"
         
         self.viewControllers = [
             reposNavigationController,
+            searchReposNavigationController,
             profielNavigationController
         ]
     }

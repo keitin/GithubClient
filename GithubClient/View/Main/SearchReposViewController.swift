@@ -1,39 +1,39 @@
 //
-//  ReposViewController.swift
+//  SearchReposViewController.swift
 //  GithubClient
 //
-//  Created by 松下慶大 on 2017/04/07.
+//  Created by 松下慶大 on 2017/04/08.
 //  Copyright © 2017年 matsushita keita. All rights reserved.
 //
 
 import UIKit
-import APIKit
 
-class ReposViewController: UITableViewController {
+class SearchReposViewController: UITableViewController {
+    @IBOutlet weak var searchButton: UIBarButtonItem!
+    @IBOutlet weak var textField: UITextField!
 
     let cellHeight: CGFloat = 70
-    var repos: [Repository] = []
+    
+    static func makeInstance() -> SearchReposViewController {
+        let storyboard = UIStoryboard(name: "SearchRepos", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController() as! SearchReposViewController
+        return viewController
+    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.title = "Repository"
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.title = "Search"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         tableView.register(UINib(nibName: "RepoCell", bundle: nil), forCellReuseIdentifier: "RepoCell")
         
-        let request = GetRepositoriesRequest(userName: "keitin")
-        Session.send(request) { result in
-            switch result {
-            case .success(let repos):
-                self.repos = repos
-                self.tableView.reloadData()
-            case .failure(let error):
-                print(error)
-            }
-        }
+    }
+    
+    @IBAction func tapSearchButton(_ sender: UIButton) {
+        self.textField.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +41,10 @@ class ReposViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.textField.resignFirstResponder()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,14 +54,15 @@ class ReposViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.repos.count
+        return 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as! RepoCell
-        let repo = repos[indexPath.row]
-        cell.fillWith(repo: repo)
+
+        // Configure the cell...
+
         return cell
     }
 

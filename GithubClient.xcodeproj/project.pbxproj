@@ -157,11 +157,11 @@
 		327BC1561E97B72E0071D0ED /* GithubClient */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
-				327BC1901E97C58A0071D0ED /* Model */,
-				327BC1871E97BCED0071D0ED /* View */,
 				327BC1A11E97D5B40071D0ED /* Extension */,
+				327BC1901E97C58A0071D0ED /* Model */,
 				327BC19E1E97D4C30071D0ED /* Resouce */,
+				327BC1871E97BCED0071D0ED /* View */,
+				327BC1571E97B72E0071D0ED /* AppDelegate.swift */,
 				327BC15E1E97B72E0071D0ED /* Assets.xcassets */,
 				327BC1631E97B72E0071D0ED /* Info.plist */,
 				327BC1601E97B72E0071D0ED /* LaunchScreen.storyboard */,
@@ -190,9 +190,9 @@
 		327BC1871E97BCED0071D0ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				327BC1B11E9886720071D0ED /* Components */,
 				327BC1981E97D31E0071D0ED /* Main */,
 				327BC18C1E97C2820071D0ED /* Sign Up */,
-				327BC1B11E9886720071D0ED /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,9 +209,9 @@
 		327BC18F1E97C5790071D0ED /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
-				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
 				327BC1AD1E9878240071D0ED /* GetRepositoriesRequest.swift */,
+				327BC1911E97C5B90071D0ED /* GetUserRequest.swift */,
+				327BC18D1E97C5280071D0ED /* GithubRequestType.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 		327BC1901E97C58A0071D0ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1B61E988FC00071D0ED /* User.swift */,
-				327BC1B81E98900B0071D0ED /* Repository.swift */,
 				327BC18F1E97C5790071D0ED /* Request */,
+				327BC1B81E98900B0071D0ED /* Repository.swift */,
+				327BC1B61E988FC00071D0ED /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,9 +229,9 @@
 		327BC1971E97D2360071D0ED /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1951E97D1F20071D0ED /* ProfileViewController.swift */,
 				327BC1B21E98874B0071D0ED /* ProfileCell.swift */,
 				327BC1B31E98874B0071D0ED /* ProfileCell.xib */,
+				327BC1951E97D1F20071D0ED /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -239,9 +239,9 @@
 		327BC1981E97D31E0071D0ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
 				327BC1971E97D2360071D0ED /* Profile */,
 				327BC1A41E97D8DA0071D0ED /* Repos */,
+				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -273,9 +273,9 @@
 		327BC1A41E97D8DA0071D0ED /* Repos */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1A21E97D8D60071D0ED /* ReposViewController.swift */,
 				327BC1A91E9873690071D0ED /* RepoCell.swift */,
 				327BC1AA1E9873690071D0ED /* RepoCell.xib */,
+				327BC1A21E97D8D60071D0ED /* ReposViewController.swift */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -286,6 +286,7 @@
 				327BC1AF1E9885660071D0ED /* DesignedNavigationController.swift */,
 			);
 			name = Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {

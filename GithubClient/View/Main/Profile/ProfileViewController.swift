@@ -14,7 +14,7 @@ class ProfileViewController: UITableViewController {
         super.viewWillLayoutSubviews()
         
         self.view.backgroundColor = UIColor.red
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
     }
     
     override func viewDidLoad() {

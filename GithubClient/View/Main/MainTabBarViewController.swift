@@ -21,12 +21,17 @@ class MainTabBarViewController: UITabBarController {
         profileViewController.tabBarItem.image = UIImage(named: "Contacts-50")
         profileViewController.tabBarItem.title = "profile"
         
+        
+        let reposNavigationController = UINavigationController()
+        reposNavigationController.navigationBar.isTranslucent = false
         let reposViewController = ReposViewController()
+        reposNavigationController.viewControllers = [reposViewController]
+        
         reposViewController.tabBarItem.image = UIImage(named: "")
         reposViewController.tabBarItem.title = "repos"
         
         self.viewControllers = [
-            reposViewController,
+            reposNavigationController,
             profileViewController
         ]
     }

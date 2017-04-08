@@ -18,21 +18,18 @@ class MainTabBarViewController: UITabBarController {
         self.tabBar.tintColor = UIColor.mainColor
         
         let profileViewController = ProfileViewController()
+        let profielNavigationController = DesignedNavigationController(rootViewController: profileViewController)
         profileViewController.tabBarItem.image = UIImage(named: "Contacts-50")
         profileViewController.tabBarItem.title = "profile"
         
-        
-        let reposNavigationController = UINavigationController()
-        reposNavigationController.navigationBar.isTranslucent = false
         let reposViewController = ReposViewController()
-        reposNavigationController.viewControllers = [reposViewController]
-        
+        let reposNavigationController = DesignedNavigationController(rootViewController: reposViewController)
         reposViewController.tabBarItem.image = UIImage(named: "")
         reposViewController.tabBarItem.title = "repos"
         
         self.viewControllers = [
             reposNavigationController,
-            profileViewController
+            profielNavigationController
         ]
     }
 

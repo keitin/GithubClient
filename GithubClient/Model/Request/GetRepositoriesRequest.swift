@@ -32,12 +32,3 @@ struct GetRepositoriesRequest: GithubRequestType {
         return try decodeArray(object)
     }
 }
-
-struct Repository: Decodable {
-    var name: String
-    var user: User?
-    
-    static func decode(_ e: Extractor) throws -> Repository {
-        return try Repository(name: e <| ["name"], user: nil)
-    }
-}

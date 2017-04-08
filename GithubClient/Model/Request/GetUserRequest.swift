@@ -28,18 +28,3 @@ struct GetUserRequest: GithubRequestType {
         self.userName = userName
     }
 }
-
-struct User: Decodable {
-    var userName: String
-    var name: String
-    var bio: String
-    var avatarURL: String
-    
-    static func decode(_ e: Extractor) throws -> User {
-        return try User(
-            userName: e <| ["login"],
-            name: e <| ["name"],
-            bio: e <| ["bio"],
-            avatarURL: e <| ["avatar_url"])
-    }
-}

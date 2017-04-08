@@ -248,9 +248,9 @@
 		327BC1981E97D31E0071D0ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1BC1E98AFEB0071D0ED /* Search Repos */,
 				327BC1971E97D2360071D0ED /* Profile */,
 				327BC1A41E97D8DA0071D0ED /* Repos */,
+				327BC1BC1E98AFEB0071D0ED /* Search Repos */,
 				327BC1991E97D3570071D0ED /* MainTabBarViewController.swift */,
 			);
 			path = Main;
@@ -301,11 +301,12 @@
 		327BC1BC1E98AFEB0071D0ED /* Search Repos */ = {
 			isa = PBXGroup;
 			children = (
-				327BC1BA1E98AFE20071D0ED /* SearchReposViewController.swift */,
 				327BC1BD1E98B4CA0071D0ED /* SearchRepos.storyboard */,
 				327BC1BF1E98B5EA0071D0ED /* SearchReposNavigationController.swift */,
+				327BC1BA1E98AFE20071D0ED /* SearchReposViewController.swift */,
 			);
 			name = "Search Repos";
+			path = "Search Repos";
 			sourceTree = "<group>";
 		};
 		83ED3D18AEAA8E9A61B7DC06 /* Frameworks */ = {
